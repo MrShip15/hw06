@@ -1,0 +1,19 @@
+language: cpp
+os:
+  - osx
+jobs:
+  include:
+  - name: "all projects"
+    script:
+    - cmake -H. -B_build
+    - cmake --build _build
+  - name: "each CMakeLists.txt"
+    script:
+    - source ./script
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+    packages:
+      - cmake
+      - cmake-data

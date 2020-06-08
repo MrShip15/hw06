@@ -1,9 +1,4 @@
 image: Visual Studio 2019
-
-build_script:
-    - cmd: cmake -H. -B_build
-    - cmd: cmake --build _build
-image: Visual Studio 2019
 platform:
   - x86
   - x64

@@ -138,6 +138,13 @@ jobs:
     - cd _build
     - cpack -G DEB
     - cd ..
+  - os: osx
+    script:
+    - cmake -H. -B_build
+    - cmake --build _build
+    - cd _build
+    - cpack -G DragNDrop
+    - cd ..
 addons:
   apt:
     packages:

@@ -37,7 +37,7 @@ set(SOLVER_VERSION_MAJOR 1)
 % touch ChangeLog.md
 % export DATE="`LANG=en_US date +'%a %b %d %Y'`"
 % cat > ChangeLog.md <<EOF
-* ${DATE} Evgengrmit <evgengrmit@icloud.com> 1.0.0
+* ${DATE} MrShip15 <mr_ship2001@mail.ru> 1.0.0
 - Initial RPM release
 EOF
 ```
@@ -53,7 +53,7 @@ EOF
 % cat >> CPackConfig.cmake <<EOF
 
 # Установка контакта
-set(CPACK_PACKAGE_CONTACT evgengrmit@icloud.com)
+set(CPACK_PACKAGE_CONTACT mr_ship2001@mail.ru)
 # Установка версии пакета
 set(CPACK_PACKAGE_VERSION_MAJOR \${SOLVER_VERSION_MAJOR})
 set(CPACK_PACKAGE_VERSION_MINOR \${SOLVER_VERSION_MINOR})
